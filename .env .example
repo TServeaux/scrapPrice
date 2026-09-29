@@ -1,2 +1,5 @@
-mail = ...
-telegram
+MAIL_SENDER=
+MAIL_PASSWORD=
+
+TELEGRAM_TOKEN=
+TELEGRAM_CHAT_ID=
