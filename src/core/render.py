@@ -49,9 +49,9 @@ class Render :
 
         fig, (axPrice, axStock) = plt.subplots(2, 1, sharex=True, figsize=(10, 7))
 
-        axPrice.plot(dates, prices, marker="o", label="Prix")
+        axPrice.plot(dates, prices, marker="o", label="Price")
         if self.__threshold is not None:
-            axPrice.axhline(self.__threshold, color="red", linestyle="--", label="Seuil d'alerte")
+            axPrice.axhline(self.__threshold, color="red", linestyle="--", label="Alert threshold")
         axPrice.set_title(self.__name)
         axPrice.set_ylabel(self.__yLabel)
         axPrice.grid(True, alpha=0.3)
@@ -59,7 +59,7 @@ class Render :
 
         axStock.plot(dates, stocks, marker="x", color="green", label="Stock")
         axStock.set_xlabel(self.__xLabel)
-        axStock.set_ylabel("Stock (exemplaires)")
+        axStock.set_ylabel("Stock (units)")
         axStock.grid(True, alpha=0.3)
         axStock.legend()
 

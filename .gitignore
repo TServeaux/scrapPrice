@@ -9,6 +9,9 @@ data/
 graphs/
 *.db
 *.png
+!docs/*.png
+logs/
+*.log
 
 # Python cache and build files
 __pycache__/
